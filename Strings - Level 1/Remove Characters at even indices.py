@@ -9,8 +9,9 @@ s = input("Enter the string : ")
 new=""
 if len(s)==0 or len(s)==1:
     print(s)
-for i in range(0,len(s)):
-    if i%2!=0:
-        new+=s[i]
+else:
+    for i in range(0,len(s)):
+        if i%2!=0:
+            new+=s[i]
         #print(new)
-print(f"{s} without the characters located at even indices is {new}.")
+    print(f"{s} without the characters located at even indices is {new}.")
